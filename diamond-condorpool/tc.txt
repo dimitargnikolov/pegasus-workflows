@@ -1,0 +1,31 @@
+# This is the transformation catalog. It lists information about each of the
+# executables that are used by the workflow.
+
+tr preprocess {
+    site condorpool {
+        pfn "${PEGASUS_PROJECT}/bin/preprocess"
+        arch "x86_64"
+        os "MACOSX"
+        type "INSTALLED"
+
+    }
+}
+
+tr findrange {
+    site condorpool {
+        pfn "${PEGASUS_PROJECT}/bin/findrange"
+        arch "x86_64"
+        os "MACOSX"
+        type "INSTALLED"
+
+    }
+}
+
+tr analyze {
+    site condorpool {
+        pfn "${PEGASUS_PROJECT}/bin/analyze"
+        arch "x86_64"
+        os "MACOSX"
+        type "INSTALLED"
+    }
+}
